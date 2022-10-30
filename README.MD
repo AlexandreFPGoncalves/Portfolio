@@ -88,7 +88,9 @@ Have the <b>latest LTS</b> npm version installed on your machine from this [webs
     npm run dev
     ```
 4. Run Storybook
-   `sh npm run storybook `
+   ```sh 
+   npm run storybook 
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
