@@ -1,12 +1,6 @@
 <a name="readme-top"></a>
 
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -15,19 +9,18 @@
     <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   <!-- </a> -->
 
-<h3 align="center">AlexandreFPGoncalves Portfolio</h3>
-
+<h3 align="center">AlexandreFPGoncalves</h3>
   <p align="center">
     Personal Portfolio
     <br />
-    <a href="https://github.com/AlexandreFPGoncalves/Portfolio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/AlexandreFPGoncalves/Portfolio/wiki"><strong>Explore the Wiki »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/AlexandreFPGoncalves/Portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/AlexandreFPGoncalves/Portfolio/issues">Request Feature</a>
   </p>
 </div>
 
@@ -48,9 +41,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#packages-used">Packages Used</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -61,17 +53,15 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Personal project where I display some of my skills and past projects. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Personal project where I display some of my skills and past projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-[![React][react-shield]][react-url]
-[![Tailwindcss][tailwindcss-shield]][tailwindcss-url]
-[![Vite][vite-shield]][vite-url]
+[![React][react-shield]][react-url] [![Typescript][typescript-shield]][typescript-url] [![Tailwindcss][tailwindcss-shield]][tailwindcss-url] [![Vite][vite-shield]][vite-url] [![Figma][figma-shield]][figma-url] [![Storybook][storybook-shield]][storybook-url] [![Npm][npm-shield]][npm-url] [![Redux][redux-shield]][redux-url] [![Git][git-shield]][git-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,74 +69,62 @@ Personal project where I display some of my skills and past projects. `github_us
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+#### Prerequisites
 
-### Prerequisites
+Have the <b>latest LTS</b> npm version installed on your machine from this [website](https://nodejs.org/en/).
 
-This is an example of how to list things you need to use the software and how to install them.
+#### Installation
 
--   npm
+1. Clone the repository
     ```sh
-    npm install npm@latest -g
+    git clone https://github.com/AlexandreFPGoncalves/Portfolio.git
     ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+2. Install NPM packages
     ```sh
-    git clone https://github.com/github_username/repo_name.git
+    npm i
     ```
-3. Install NPM packages
+3. Run application
     ```sh
-    npm install
+    npm run dev
     ```
-4. Enter your API in `config.js`
-    ```js
-    const API_KEY = 'ENTER YOUR API';
-    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+4. Run Storybook
+   `sh npm run storybook `
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 
-## Roadmap
+### Roadmap
 
--   [ ] Feature 1
--   [ ] Feature 2
--   [ ] Feature 3
-    -   [ ] Nested Feature
+-   [ ] Design System **[WIP]**
+-   [ ] Component Library
+-   [ ] React Application
+-   [ ] Purchase of Domain
+-   [ ] Deploy
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING
-## Contributing
+<!-- PACKAGES USED -->
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## Packages used
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. <b>[Clsx](https://www.npmjs.com/package/clsx)</b> | Creates classes variations, helps on creating conditional style classes inside a component.
+   <br>
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. <b>[Radix-Ui](https://www.radix-ui.com)</b> | Various primitive components from radix are utilized in this project.
+   <br>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+3. <b>[Storybook a11y Addon](https://www.npmjs.com/package/phosphor-react)</b> | This addon can be helpful on making the components UI more accessible.
+   <br>
+
+4. <b>[Phosphor-react](https://www.npmjs.com/package/phosphor-react)</b> | Phosphor is a flexible icon family for interfaces, diagrams, presentations, etc.
+   <br>
+
+5. <b>[Tailwindcss](https://tailwindcss.com)</b> | A utility-first CSS framework packed with styled classes that can be composed to build any design, directly in your markup.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -154,49 +132,57 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
 
-Alexandre Gonçalves - [Linkedin](https://www.linkedin.com/in/alexandre-gonçalves-3a4a53227/) - alexandrefpgoncalves@gmail.com
+**Alexandre Gonçalves** | [Linkedin](https://www.linkedin.com/in/alexandre-gonçalves-3a4a53227/) | alexandrefpgoncalves@gmail.com
 
-Project Link: [AlexandreFPGoncalves/Portfolio](https://github.com/AlexandreFPGoncalves/Portfolio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+**Project Link:** [AlexandreFPGoncalves/Portfolio](https://github.com/AlexandreFPGoncalves/Portfolio)
 
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
 
--   []()
--   []()
--   []()
+> Thanks to Diogo Nogueira for all the help he provided [Github](https://github.com/isneru)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/AlexandreFPGoncalves/Portfolio.svg?style=for-the-badge
 [contributors-url]: https://github.com/AlexandreFPGoncalves/Portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/AlexandreFPGoncalves/Portfolio.svg?style=for-the-badge
 [forks-url]: https://github.com/AlexandreFPGoncalves/Portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/AlexandreFPGoncalves/Portfolio?style=for-the-badge
 [stars-url]: https://github.com/AlexandreFPGoncalves/Portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/AlexandreFPGoncalves/Portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/AlexandreFPGoncalves/Portfolio/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/AlexandreFPGoncalves/Portfolio.svg?style=for-the-badge
 [license-url]: https://github.com/AlexandreFPGoncalves/Portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/alexandre-gonçalves-3a4a53227/
 
-<!-- [product-screenshot]: images/screenshot.png -->
+<!-- Languages Shields -->
 
 [react-shield]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
+[typescript-shield]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[typescript-url]: https://www.typescriptlang.org
 [tailwindcss-shield]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [tailwindcss-url]: https://tailwindcss.com
 [vite-shield]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [vite-url]: https://vitejs.dev/
+[figma-shield]: https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white
+[figma-url]: https://www.figma.com
+[storybook-shield]: https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white
+[storybook-url]: https://storybook.js.org
+[npm-shield]: https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white
+[npm-url]: https://www.npmjs.com
+[redux-shield]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
+[redux-url]: https://redux.js.org
+[git-shield]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
+[git-url]: https://git-scm.com
+
+<!-- [product-screenshot]: images/screenshot.png -->
