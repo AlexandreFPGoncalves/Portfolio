@@ -1,9 +1,9 @@
 import ghLogo from "./github.svg";
 import linkedinLogo from "./linkedin.svg";
-import x from "./x.svg";
+import twitterLogo from "./twitter.svg";
 
 export const images = {
   ghLogo,
   linkedinLogo,
-  x,
+  twitterLogo,
 };

@@ -11,7 +11,7 @@ export const Footer = () => {
       url: "https://www.linkedin.com/in/alexandrefpgoncalves/",
       logo: images.linkedinLogo,
     },
-    { url: "https://twitter.com/VioletAlexDev", logo: images.x },
+    { url: "https://twitter.com/VioletAlexDev", logo: images.twitterLogo },
   ];
 
   return (
