@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react';
+import { createEffect, createSignal } from 'solid-js';
 
 export default function useScroll(threshold = 0) {
-  const [isScrolled, setScrolled] = useState<boolean>();
+	const [isScrolled, setScrolled] = createSignal<boolean>();
 
-  useEffect(() => {
-    const onScroll = () => {
-      console.log('Scroll event fired');
-      setScrolled(window.scrollY > threshold);
-    };
-    onScroll();
+	createEffect(() => {
+		const onScroll = () => {
+			console.log('Scroll event fired');
+			setScrolled(window.scrollY > threshold);
+		};
+		onScroll();
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, [threshold]);
+		window.addEventListener('scroll', onScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+		};
+	}, [threshold]);
 
-  return isScrolled;
+	return isScrolled;
 }
