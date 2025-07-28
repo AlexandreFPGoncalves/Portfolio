@@ -1,22 +1,10 @@
 {
 	"language": "en",
-	"words": [
-		"alexandrefpgoncalves",
-		"solidjs"
-	],
+	"words": ["alexandrefpgoncalves"],
 	"flagWords": [],
-	"ignorePaths": [
-		"cspell.json",
-		"react-app-env.d.ts",
-		"**/i18n/**",
-		"src/assets/**",
-		"src/configs/**"
-	],
+	"ignorePaths": ["cspell.json", "react-app-env.d.ts", "**/i18n/**", "src/assets/**", "src/configs/**"],
 	"maxNumberOfProblems": 10000,
 	"caseSensitive": false,
 	"allowCompoundWords": false,
-	"import": [
-		"./node_modules/cspell-dict-en_us/cspell-ext.json",
-		"./node_modules/cspell-dict-en-gb/cspell-ext.json"
-	]
+	"import": ["./node_modules/cspell-dict-en_us/cspell-ext.json", "./node_modules/cspell-dict-en-gb/cspell-ext.json"]
 }

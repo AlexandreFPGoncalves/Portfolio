@@ -1,12 +1,10 @@
-import { Router, Route } from '@solidjs/router';
-import { Routes } from './routes';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import { Home } from './screens';
 
-export default function App() {
-	const { Home } = Routes;
-
-	return (
-		<Router>
-			<Route path="/" component={Home} />
-		</Router>
-	);
-}
+createRoot(document.getElementById('root')!).render(
+	<StrictMode>
+		<Home />
+	</StrictMode>
+);

@@ -1,6 +1,4 @@
 import clsx from 'clsx';
-import type { Component } from 'solid-js';
-
 interface AvailabilityProps {
 	status: 'active' | 'idle' | 'deactivated';
 	customLabel?: string;
@@ -10,7 +8,7 @@ interface AvailabilityResources {
 	label: string;
 }
 
-export const Availability: Component<AvailabilityProps> = ({ status, customLabel }) => {
+export const Availability: React.FC<AvailabilityProps> = ({ status, customLabel }) => {
 	const resources: AvailabilityResources = {
 		label: customLabel
 			? customLabel
@@ -24,19 +22,19 @@ export const Availability: Component<AvailabilityProps> = ({ status, customLabel
 	return (
 		<>
 			<div
-				class={clsx(
+				className={clsx(
 					'h-2 w-2 rounded-full opacity-75',
-					status === 'active' ? 'bg-emerald-500' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
+					status === 'active' ? 'bg-aqua' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
 				)}
 			>
 				<div
-					class={clsx(
+					className={clsx(
 						'h-2 w-2 animate-ping rounded-full',
-						status === 'active' ? 'bg-emerald-500' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
+						status === 'active' ? 'bg-aqua' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
 					)}
 				/>
 			</div>
-			<div class="min-w-[128px] justify-center text-[.9rem] font-semibold text-slate-500">{resources.label}</div>
+			<div className="min-w-[128px] justify-center text-[.9rem] font-semibold text-white">{resources.label}</div>
 		</>
 	);
 };

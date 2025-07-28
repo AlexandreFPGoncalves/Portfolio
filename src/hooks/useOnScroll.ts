@@ -1,9 +1,9 @@
-import { createEffect, createSignal } from 'solid-js';
+import { useState, useEffect } from 'react';
 
 export default function useScroll(threshold = 0) {
-	const [isScrolled, setScrolled] = createSignal<boolean>();
+	const [isScrolled, setScrolled] = useState<boolean>();
 
-	createEffect(() => {
+	useEffect(() => {
 		const onScroll = () => {
 			console.log('Scroll event fired');
 			setScrolled(window.scrollY > threshold);

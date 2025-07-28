@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import type { Component } from 'solid-js';
 
 interface ButtonProps {
 	label: string;
@@ -8,10 +7,10 @@ interface ButtonProps {
 	animated?: boolean;
 }
 
-export const Button: Component<ButtonProps> = ({ label, onClick, disabled = false, animated = false }) => {
+export const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false, animated = false }) => {
 	return (
 		<div
-			class={clsx(
+			className={clsx(
 				`rounded-full bg-grey p-[2px] transition-all hover:bg-gradient-to-r`,
 				disabled
 					? 'cursor-not-allowed opacity-60 hover:from-grey hover:to-blue'
@@ -23,7 +22,7 @@ export const Button: Component<ButtonProps> = ({ label, onClick, disabled = fals
 				onClick={onClick}
 				disabled={disabled}
 				type="button"
-				class={clsx('rounded-full bg-bg px-6 py-2', disabled ? 'cursor-not-allowed text-grey' : 'text-white')}
+				className={clsx('rounded-full bg-bg px-6 py-2', disabled ? 'cursor-not-allowed text-grey' : 'text-white')}
 			>
 				{label}
 			</button>

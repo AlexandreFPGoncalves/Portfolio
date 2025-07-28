@@ -13,15 +13,17 @@ export const Footer = () => {
 	];
 
 	return (
-		<div class="fixed bottom-5 right-10 flex h-48 flex-col items-center justify-end gap-6">
-			Start Exploring
-			<div class="h-[1px] w-[300px] bg-zinc-600" />
-			<div class="flex w-full flex-row items-center gap-2">
-				<div class="flex gap-5">
-					{socials.map((social, i) => (
+		<div className="fixed bottom-7 right-10 flex h-48 flex-col items-center justify-end gap-6">
+			<text className="font-semibold">Start Exploring</text>
+
+			<div className="h-[1px] w-[300px] bg-zinc-600" />
+
+			<div className="flex w-full flex-row items-center gap-2">
+				<div className="flex gap-5">
+					{socials.map(social => (
 						<a href={social.url} target="_blank">
 							<img
-								class="invert transition-all hover:-translate-y-[1px]"
+								className="invert transition-all hover:-translate-y-[1px]"
 								height={24}
 								width={24}
 								src={social.logo}

@@ -1,6 +1,4 @@
-import type { ComponentProps } from 'solid-js';
-
-export const OpenIcon = (props: ComponentProps<'svg'>) => {
+export const OpenIcon = (props: React.FC<'svg'>) => {
 	return (
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" {...props}>
 			<line x1="4" x2="20" y1="12" y2="12" />
