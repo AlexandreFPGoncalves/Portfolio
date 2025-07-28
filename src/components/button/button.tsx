@@ -11,9 +11,9 @@ export const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false
 	return (
 		<div
 			className={clsx(
-				`rounded-full bg-grey p-[2px] transition-all hover:bg-gradient-to-r`,
+				`bg-grey rounded-full p-[2px] transition-all hover:bg-gradient-to-r`,
 				disabled
-					? 'cursor-not-allowed opacity-60 hover:from-grey hover:to-blue'
+					? 'hover:from-grey hover:to-blue cursor-not-allowed opacity-60'
 					: 'hover:from-blue hover:to-purple hover:shadow-purple',
 				animated && 'animate-breath'
 			)}
@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false
 				onClick={onClick}
 				disabled={disabled}
 				type="button"
-				className={clsx('rounded-full bg-bg px-6 py-2', disabled ? 'cursor-not-allowed text-grey' : 'text-white')}
+				className={clsx('bg-bg rounded-full px-6 py-2', disabled ? 'text-grey cursor-not-allowed' : 'text-white')}
 			>
 				{label}
 			</button>

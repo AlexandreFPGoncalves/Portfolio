@@ -1,20 +1,32 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-export default function useScroll(threshold = 0) {
-	const [isScrolled, setScrolled] = useState<boolean>();
+export const useScroll = () => {
+	const [activeSection, setActiveSection] = useState<string | null>(null);
+
+	const observer = useRef<IntersectionObserver | null>(null);
 
 	useEffect(() => {
-		const onScroll = () => {
-			console.log('Scroll event fired');
-			setScrolled(window.scrollY > threshold);
-		};
-		onScroll();
+		const sections = document.querySelectorAll('section');
 
-		window.addEventListener('scroll', onScroll, { passive: true });
-		return () => {
-			window.removeEventListener('scroll', onScroll);
-		};
-	}, [threshold]);
+		observer.current = new IntersectionObserver(
+			entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						setActiveSection(entry.target.id);
+					}
+				});
+			},
+			{
+				threshold: 0.5,
+			}
+		);
 
-	return isScrolled;
-}
+		sections.forEach(section => {
+			observer.current?.observe(section);
+		});
+
+		return () => observer.current?.disconnect();
+	}, []);
+
+	return activeSection;
+};

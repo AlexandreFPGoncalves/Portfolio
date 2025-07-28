@@ -1,1 +1,1 @@
-export * from "./dividers";
+export * from './dividers';

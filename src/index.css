@@ -2,8 +2,13 @@
 
 @theme {
 	--font-display: 'Figtree', 'sans-serif';
-	--color-bg: #010314;
-	--color-purple: #7158ea;
+	--color-bg: #03010b;
+	--color-va-900: #0d062f;
+	--color-va-800: #231081;
+	--color-va-700: #3a1ad2;
+	--color-va-500: #7158ea;
+	--color-va-200: #b6aaf4;
+	--color-va-100: #fcfbff;
 	--color-aqua: #79e1c4;
 
 	--shadow-glow: 0px 0px 100px 0px rgba(167, 137, 255, 0.25);
@@ -29,7 +34,7 @@
 
 @layer base {
 	body {
-		@apply font-display !scroll-smooth overflow-y-scroll;
+		@apply font-display overflow-y-scroll !scroll-smooth;
 		scrollbar-width: none;
 		-ms-overflow-style: none;
 	}

@@ -24,13 +24,13 @@ export const Availability: React.FC<AvailabilityProps> = ({ status, customLabel 
 			<div
 				className={clsx(
 					'h-2 w-2 rounded-full opacity-75',
-					status === 'active' ? 'bg-aqua' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
+					status === 'active' ? 'bg-va-500' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
 				)}
 			>
 				<div
 					className={clsx(
 						'h-2 w-2 animate-ping rounded-full',
-						status === 'active' ? 'bg-aqua' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
+						status === 'active' ? 'bg-va-500' : status === 'idle' ? 'bg-yellow-600' : 'bg-red-500'
 					)}
 				/>
 			</div>

@@ -1,6 +1,6 @@
 {
 	"language": "en",
-	"words": ["alexandrefpgoncalves"],
+	"words": ["alexandrefpgoncalves", "extralight", "Gonçalves"],
 	"flagWords": [],
 	"ignorePaths": ["cspell.json", "react-app-env.d.ts", "**/i18n/**", "src/assets/**", "src/configs/**"],
 	"maxNumberOfProblems": 10000,

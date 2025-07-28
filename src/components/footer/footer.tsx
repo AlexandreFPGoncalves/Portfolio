@@ -14,9 +14,9 @@ export const Footer = () => {
 
 	return (
 		<div className="fixed bottom-7 right-10 flex h-48 flex-col items-center justify-end gap-6">
-			<text className="font-semibold">Start Exploring</text>
+			{/* <text className="font-semibold">Start Exploring</text>
 
-			<div className="h-[1px] w-[300px] bg-zinc-600" />
+			<div className="h-[1px] w-[300px] bg-zinc-600" /> */}
 
 			<div className="flex w-full flex-row items-center gap-2">
 				<div className="flex gap-5">
