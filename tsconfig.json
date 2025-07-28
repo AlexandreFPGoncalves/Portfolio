@@ -3,9 +3,9 @@
 		"baseUrl": "./src/",
 		"paths": {
 			"@components": ["components"],
+			"@hooks": ["hooks"],
 			"@utils": ["utils"],
-			"@assets": ["assets"],
-			"@hooks": ["hooks"]
+			"@assets": ["assets"]
 		},
 		"jsx": "react-jsx",
 		"target": "ESNext",
